@@ -8,8 +8,7 @@ namespace ReadAndWriteCSV
     class Program
     {
         static void Main(string[] args)
-        {
-            
+        {            
 			var importer = new Importer();
 			importer.Mappings = new List<KeyValuePair<string, string>>{
 			new KeyValuePair<string,string>("UserId","UserId"),
@@ -28,8 +27,6 @@ namespace ReadAndWriteCSV
 			exportCsv.Export<User>(listForExport, AppDomain.CurrentDomain.BaseDirectory + "\\CSVFile\\Book1.csv");
 
 		}
-
-
 		
 	}
 
